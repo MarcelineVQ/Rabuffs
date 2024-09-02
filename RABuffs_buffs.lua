@@ -258,11 +258,18 @@ RAB_Buffs = {
 	merlot = { name = "Medivh's Merlot", identifiers = {
 		{ tooltip = "Increased Stamina", texture = "INV_Drink_04", spellId = 57106 },
 		{ tooltip = "Rumsey Rum Black Label", texture = "INV_Drink_04", spellId = 25804 }, -- doesn't stack with rum
+		{ tooltip = "Gordok Green Grog", texture = "INV_Drink_03", spellId = 22789 }, -- doesn't stack with grogg
 	}, grouping = "Food/Drink", buffFunc = RAB_UseItem, itemId = 61174 },
 	rumseyrum = { name = "Rumsey Rum Black Label", identifiers = {
 		{ tooltip = "Rumsey Rum Black Label", texture = "INV_Drink_04", spellId = 25804 },
 		{ tooltip = "Increased Stamina", texture = "INV_Drink_04", spellId = 57106 }, -- doesn't stack with merlot
+		{ tooltip = "Gordok Green Grog", texture = "INV_Drink_03", spellId = 22789 }, -- doesn't stack with grog
 	}, grouping = "Food/Drink", buffFunc = RAB_UseItem, itemId = 21151 },
+	gordokgg = { name = "Gordok Green Grog", identifiers = {
+		{ tooltip = "Gordok Green Grog", texture = "INV_Drink_03", spellId = 22789 },
+		{ tooltip = "Increased Stamina", texture = "INV_Drink_04", spellId = 57106 }, -- doesn't stack with merlot
+		{ tooltip = "Rumsey Rum Black Label", texture = "INV_Drink_04", spellId = 25804 }, -- doesn't stack with rum
+	}, grouping = "Food/Drink", buffFunc = RAB_UseItem, itemId = 18269 },
 
 	wellfed = { name = "Well Fed", identifiers = { { tooltip = "Well Fed", texture = "Spell_Misc_Food" } }, grouping = "Food/Drink" },
 	anyfood = { name = "Any Food", identifiers = {
